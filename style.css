@@ -21,6 +21,7 @@ h1{
 }
 
 h2{
+    font-size: 2rem;
     margin: 0;
 }
 
@@ -38,11 +39,31 @@ p{
     padding: 1rem 10rem 1rem 10rem;
 }
 
-.sectionArticle{
+
+.gradientArticle{
+    width: 55vw;
+    height: 60vh;
+    position: relative;
     background-image: url(./assets/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 55vw;
-    height: 65vh;
     border-radius: 1rem;
+}
+
+.gradientArticle:after{
+    border-radius: 1rem;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.textArticle{
+    color: #fff;
+    position: absolute;
+    bottom: calc(50% - 12vw);
+    padding-left: 1.5rem;
 }
