@@ -9,10 +9,6 @@ body{
     margin: 0;
 }
 
-main{
-    margin: 3.5rem 5rem 0 10rem;
-}
-
 h1{
     width: auto;
     font-size: 2.5rem;
@@ -37,9 +33,19 @@ span{
     font-weight: 700;
 }
 
-.navHeader{
-    background: #02A28F;
+#container{
+    width: 55vw;
+    margin: 3rem 5rem 2rem 10rem;
+    position: relative;
+}
+
+
+.bBlue{
     color: #fff;
+    background: #02A28F;
+}
+
+.navHeader{
     padding: 1rem 10rem 1rem 10rem;
 }
 
@@ -68,6 +74,34 @@ span{
 .textArticle{
     color: #fff;
     position: absolute;
-    bottom: calc(50% - 12vw);
+    top: 80%;
+    left: 7%;
+    transform: translate(-7%, -80%);
     padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media only screen and (max-width:2560px) {
+
+    .gradientArticle{
+        width: 55vw;
+        height: 60vh;
+        position: relative;
+        background-image: url(./assets/banner.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem;
+    }
+
+    .textArticle{
+        color:#fff;
+        position: absolute;
+        bottom: calc(50% - 8vw);
+        left: 5%;
+    }
+    h2{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
 }
