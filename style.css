@@ -9,6 +9,11 @@ body{
     margin: 0;
 }
 
+main{
+    display: flex;
+}
+
+
 h1{
     width: auto;
     font-size: 2.5rem;
@@ -26,6 +31,11 @@ h3{
     margin: 0;
 }
 
+h4{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
 p{
     margin: 0;
 }
@@ -34,11 +44,11 @@ span{
     font-weight: 700;
 }
 
-#container{
+.container{
     width: 55vw;
     height: auto;
     margin: 2rem 3rem 2rem 10rem;
-    position: relative;
+    background: green;
 }
 
 
@@ -55,6 +65,7 @@ span{
 .gradientArticle{
     width: 55vw;
     height: 60vh;
+    z-index: 1;
     position: relative;
     background-image: url(./assets/banner.jpeg);
     background-repeat: no-repeat;
@@ -65,6 +76,7 @@ span{
     border-radius: .5rem;
     content: '';
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -72,22 +84,24 @@ span{
     background: linear-gradient(to bottom, transparent 0%, black 100%);
 }
 
-.textArticle{
+.container > .textArticle{
     color: #fff;
     position: absolute;
     top: 65%;
-    left: 7%;
+    left: 15%;
+    z-index: 1;
     transform: translate(-7%, -65%);
     padding-left: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
-.cardTitle{
+.container > .cardTitle{
     display:flex ;
     justify-content: space-between;
     font-size: 2rem;
-    padding:1rem;
+    padding:1rem 1rem 1rem 1rem;
     border-radius: .5rem;
+    margin: 1rem 1rem 1rem 0rem;
 }
 
 .cardTitle button{
@@ -103,7 +117,7 @@ span{
     grid-template-columns: repeat(2, 1fr);
     gap: .5rem 2.5rem;
     width: 55vw;
-    height: 100vh;
+    height: auto;
     text-align: left;
 }
 .cards img{
@@ -124,6 +138,18 @@ span{
 .cardItem h3{
     padding: .2rem;
     font-size: 1.5rem;
+}
+
+.navSidePosts{
+    height: auto;
+    width: 25vw;
+    position: relative;
+}
+
+.navSideTitle{
+    font-size: 2rem;
+    padding:.5rem;
+    border-radius: .5rem;
 }
 
 @media only screen and (max-width:2298px) {
@@ -153,6 +179,12 @@ span{
 }
 
 @media only screen and (max-width:767px){
+   main{
+     display: grid;
+     grid-template-columns: 1fr;
+   }
+
+
     .textArticle{
         color:#fff;
         position: absolute;
