@@ -74,14 +74,14 @@ span{
 .textArticle{
     color: #fff;
     position: absolute;
-    top: 80%;
+    top: 65%;
     left: 7%;
-    transform: translate(-7%, -80%);
+    transform: translate(-7%, -65%);
     padding-left: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
-@media only screen and (max-width:2560px) {
+@media only screen and (max-width:2298px) {
 
     .gradientArticle{
         width: 55vw;
@@ -96,7 +96,8 @@ span{
     .textArticle{
         color:#fff;
         position: absolute;
-        bottom: calc(50% - 8vw);
+        bottom: calc(100% - 1vw);
+        top: 80%;
         left: 5%;
     }
     h2{
@@ -104,4 +105,14 @@ span{
         margin: 0;
     }
 
+}
+
+@media only screen and (max-width:767px){
+    .textArticle{
+        color:#fff;
+        position: absolute;
+        bottom: calc(100% - 1vw);
+        top: 80%;
+        left: 5%;
+    }
 }
