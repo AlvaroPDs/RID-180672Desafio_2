@@ -2,4 +2,4 @@
 
 Desafio 2 blog responsivo Dnc.
 
-Link netfly:
+Link netfly: https://blogresponsivo.netlify.app/
